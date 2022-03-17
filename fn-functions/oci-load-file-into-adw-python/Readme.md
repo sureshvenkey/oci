@@ -1,6 +1,6 @@
 
 ## Use OCI fn function to load data from object server to Autonomus Database using cx_Oracle python module
-Useful link for ETL using Oracle Functions
+Useful link for ETL using Oracle Functions  
 The below link uses soda to connect to Autonmous Databse, but insted i use cx_Oracle python module to connect to Autonmous Database  
 https://docs.oracle.com/en/learn/functions_adw/index.html#introduction  
 Commonly used code in Oracle Functions  
