@@ -15,6 +15,9 @@ https://github.com/oracle/oracle-functions-samples/tree/master/samples
 4. If you need to add additional packages to be included in the conatiner, then create Dockerfile. 
 Use the fn build command with verbose to know the Dockerfile which is used.
 > fn -v build
+
+For more detail about adding dependency packages at runtime, refer: https://ofmwtech.wordpress.com/2022/01/11/using-external-jars-in-oci-functions-with-runtime-as-java/  
+
 4. In some cases you might require the libaio.sp.1 library which does'nt come with instant client which may need to be installed manually. Use rpm command to install libaio-0.3.112-1.el8.x86_64.rpm package to resolve the dependency.  
 5. The required python modules need to be specified in requirements.txt file. I have added the cx_Oracle module init.
 6. Workaround for "libclntsh.so: file too short" error
