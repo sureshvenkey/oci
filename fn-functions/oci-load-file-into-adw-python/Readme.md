@@ -1,5 +1,5 @@
 
-
+## Use OCI fn function to load data from object server to Autonomus Database 
 Useful link for ETL using Oracle Functions  
 https://docs.oracle.com/en/learn/functions_adw/index.html#introduction  
 Commonly used code in Oracle Functions  
