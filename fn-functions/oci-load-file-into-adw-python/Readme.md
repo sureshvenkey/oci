@@ -28,6 +28,6 @@ For more detail about adding dependency packages at runtime, refer:
 If the libclntsh.so is an empty file copy the libclntsh.so.21.1 with libclntsh.so file.   
 cp libclntsh.so.21.1 libclntsh.so
 
-## Aditional Resource
+## Aditional Resource  
 > Developer Tutorial
 > https://docs.oracle.com/en-us/iaas/developer-tutorials/tutorials/home.htm#home__functions
