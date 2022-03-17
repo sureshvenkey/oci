@@ -20,5 +20,5 @@ Use the fn build command with verbose to know the Dockerfile which is used.
 6. Workaround for "libclntsh.so: file too short" error
 > "SystemExit: DPI-1047: Cannot locate a 64-bit Oracle Client library: \"/function/instantclient_21_5/libclntsh.so: file too short\". See https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html for help"    
 
-If the libclntsh.so file is an empty file copy the libclntsh.so.21.1 file with libclntsh.so file.   
+If the libclntsh.so is an empty file copy the libclntsh.so.21.1 with libclntsh.so file.   
 cp libclntsh.so.21.1 libclntsh.so
