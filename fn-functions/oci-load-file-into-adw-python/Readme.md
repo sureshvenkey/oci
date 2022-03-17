@@ -7,7 +7,7 @@ Commonly used code in Oracle Functions
 https://github.com/oracle/oracle-functions-samples/tree/master/samples  
 
 End User 
-or          --> 
+or          -->   
 IOT Device  
 
 1. I use fnproject/python:3.8 and fnproject/python:3.8-dev docker images of RHEL8 flavour to run functions in container.    
