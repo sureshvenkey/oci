@@ -18,7 +18,7 @@ Use the fn build command with verbose to know the Dockerfile which is used.
 
 For more detail about adding dependency packages at runtime, refer: https://ofmwtech.wordpress.com/2022/01/11/using-external-jars-in-oci-functions-with-runtime-as-java/  
 
-4. In some cases you might require the libaio.sp.1 library which does'nt come with instant client which may need to be installed manually. Use rpm command to install libaio-0.3.112-1.el8.x86_64.rpm package to resolve the dependency.  
+4. In case if you need libaio.sp.1 library which does'nt come with instant client, Use rpm command to install libaio-0.3.112-1.el8.x86_64.rpm package to resolve the dependency.  
 5. The required python modules need to be specified in requirements.txt file. I have added the cx_Oracle module init.
 6. Workaround for "libclntsh.so: file too short" error
 > "SystemExit: DPI-1047: Cannot locate a 64-bit Oracle Client library: \"/function/instantclient_21_5/libclntsh.so: file too short\". See https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html for help"    
