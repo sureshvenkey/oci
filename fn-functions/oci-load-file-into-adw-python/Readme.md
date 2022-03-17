@@ -12,3 +12,4 @@ https://github.com/oracle/oracle-functions-samples/tree/master/samples
 Use the fn build command with verbose to know the Dockerfile which is used.
 > fn -v build
 4. In some cases you might require the libaio.sp.1 library which does'nt come with instant client whcih may need to be installed manually. Use rpm command to install libaio-0.3.112-1.el8.x86_64.rpm package to resolve the dependency.  
+5. The required python modules need to be specified in requirements.txt file. I have added the cx_Oracle module init.
