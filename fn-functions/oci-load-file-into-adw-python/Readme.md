@@ -1,3 +1,3 @@
-h1 The image it is used is fnproject/python:3.8 and fnproject/python:3.8-dev which is RHEL8  
-Download the latest Oracle instant client libraries and make sure they are copied in the container. I used instantclient_21_5 (instantclient-basic-linux.x64-21.5.0.0.0dbru) which can be downloded from https://www.oracle.com/database/technologies/instant-client/downloads.html  
-In some cases you might require the libaio.sp.1 library which does'nt come with instant client whcih may need to be installed manually. Use rpm command to install libaio-0.3.112-1.el8.x86_64.rpm package to resolve the dependency.  
+1. The image it is used is fnproject/python:3.8 and fnproject/python:3.8-dev which is RHEL8  
+2. Download the latest Oracle instant client libraries and make sure they are copied in the container. I used instantclient_21_5 (instantclient-basic-linux.x64-21.5.0.0.0dbru) which can be downloded from https://www.oracle.com/database/technologies/instant-client/downloads.html  
+3. In some cases you might require the libaio.sp.1 library which does'nt come with instant client whcih may need to be installed manually. Use rpm command to install libaio-0.3.112-1.el8.x86_64.rpm package to resolve the dependency.  
