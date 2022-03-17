@@ -1,5 +1,5 @@
 
-## Use OCI fn function to load data from object server to Autonomus Database using cx_Oracle python module
+## Use OCI fn function to load data from object storage to Autonomus Database using cx_Oracle python module
 Useful link for ETL using Oracle Functions  
 The below link uses soda to connect to Autonmous Databse, but insted i use cx_Oracle python module to connect to Autonmous Database  
 https://docs.oracle.com/en/learn/functions_adw/index.html#introduction  
@@ -10,7 +10,7 @@ https://github.com/oracle/oracle-functions-samples/tree/master/samples
 > #### End User or IOT Device ---> OCI Bucket ---> OCI Event ---> OCI FN-Function ---> Autonomous Database  
  
 
-2. I use fnproject/python:3.8 and fnproject/python:3.8-dev docker images of RHEL8 flavour to run functions in container.    
+1. I use fnproject/python:3.8 and fnproject/python:3.8-dev docker images of RHEL8 flavour to run functions in container.    
 3. Download the latest Oracle instant client libraries and make sure they are copied in the container. I used instantclient_21_5 (instantclient-basic-linux.x64-21.5.0.0.0dbru) which can be downloded from https://www.oracle.com/database/technologies/instant-client/downloads.html for more details refer Dockerfile.  
 4. If you need to add additional packages to be included in the conatiner, then create Dockerfile. 
 Use the fn build command with verbose to know the Dockerfile which is used.
