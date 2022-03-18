@@ -35,9 +35,10 @@ If you are new to fn function, then start with fn init command which creates a f
 > memory: 256  
 > ```
 
-For More details refer.
+For More details refer fn project python intro tutorial.   
 https://fnproject.io/tutorials/python/intro/
-
+Commonly used code in Oracle Functions are given below.  
+https://github.com/oracle/oracle-functions-samples/tree/master/samples
 
 # Use OCI fn function to load data from object storage to Autonomus Database with cx_Oracle python module
 https://github.com/sureshvenkey/oci/tree/main/fn-functions/oci-load-file-into-adw-python
