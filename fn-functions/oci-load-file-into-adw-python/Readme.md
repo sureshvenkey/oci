@@ -6,6 +6,7 @@ https://docs.oracle.com/en/learn/functions_adw/index.html#introduction
 Commonly used code in Oracle Functions  
 https://github.com/oracle/oracle-functions-samples/tree/master/samples  
 
+**Function Flow**  
 > ```#### Function Flow   
 > 
 > #### End User or IOT Device ---> OCI Bucket ---> OCI Event ---> OCI FN-Function ---> Autonomous Database
