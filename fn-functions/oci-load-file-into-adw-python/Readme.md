@@ -13,7 +13,7 @@ https://github.com/oracle/oracle-functions-samples/tree/master/samples
 1. I use fnproject/python:3.8 and fnproject/python:3.8-dev docker images of RHEL8 flavour to run functions in container.    
 3. Download the latest Oracle instant client libraries and make sure they are copied in the container. I used instantclient_21_5 (instantclient-basic-linux.x64-21.5.0.0.0dbru) which can be downloded from https://www.oracle.com/database/technologies/instant-client/downloads.html for more details refer Dockerfile.  
 4. During build or deploy phase of the function, Oracle Functions uses the “func.yaml” file to create a temporary Dockerfile to build the Docker image. Once the docker image is created Oracle Functions deletes this file.  
-If you need to add additional packages to be included in the conatiner, then create a Dockerfile simillar to the Dockerfile created by fn function using “func.yaml”, then to add the dependencies using COPY or ADD command.   
+If you need to add additional packages to be included in the conatiner, then create a Dockerfile simillar to the Dockerfile created by fn function using “func.yaml”, then to add the dependencies using COPY or ADD command. The required python modules need to be specified in requirements.txt file. I have added the cx_Oracle module in it.  
 Use the fn build command with verbose to know the Dockerfile used by fn function.
 > fn -v build
 
@@ -42,8 +42,15 @@ For more detail about adding dependency packages at runtime, refer:
 > https://docs.oracle.com/en-us/iaas/Content/Functions/Tasks/functionsusingcustomdockerfiles.htm
 
 4. In case if you need libaio.sp.1 library which does'nt come with instant client, Use rpm command to install libaio-0.3.112-1.el8.x86_64.rpm package to resolve the dependency.  
-5. The required python modules need to be specified in requirements.txt file. I have added the cx_Oracle module init.
-6. Workaround for "libclntsh.so: file too short" error
+5. Autonmous Database uses mtls (mutual tls) authentication that means you need to have the Wallet zip in addition to the database password to connect to the database.
+The zip file will be in Wallet_databasename.zip format and includes the following files:
+tnsnames.ora and sqlnet.ora: Network configuration files storing connect descriptors and SQL*Net client side configuration.  
+cwallet.sso and ewallet.p12: Auto-open SSO wallet and PKCS12 file. The PKCS12 file is protected by the wallet password provided while downloading the wallet.  
+keystore.jks and truststore.jks: Java keystore and truststore files. They are protected by the wallet password provided while downloading the wallet.  
+ojdbc.properties: Contains the wallet related connection property required for JDBC connection. This should be in the same path as tnsnames.ora.  
+README: Contains wallet expiration information and links for Autonomous Database tools and resources.  
+ 
+7. Workaround for "libclntsh.so: file too short" error
 > "SystemExit: DPI-1047: Cannot locate a 64-bit Oracle Client library: \"/function/instantclient_21_5/libclntsh.so: file too short\". See https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html for help"    
 
 If the libclntsh.so is an empty file copy the libclntsh.so.21.1 with libclntsh.so file.   
