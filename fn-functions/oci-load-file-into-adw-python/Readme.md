@@ -19,12 +19,12 @@ Use the fn build command with verbose to know the Dockerfile used by fn function
 
 Sample Dockerfile is given below
 
-> FROM fnproject/python:3.8-dev as build-stage
-> WORKDIR /function
-> ADD requirements.txt /function/
-> ADD libaio-0.3.112-1.el8.x86_64.rpm /function/
-> COPY instantclient_21_5 /function/
-> RUN rpm -ivh /function/libaio-0.3.112-1.el8.x86_64.rpm
+> FROM fnproject/python:3.8-dev as build-stage  
+> WORKDIR /function  
+> ADD requirements.txt /function/  
+> ADD libaio-0.3.112-1.el8.x86_64.rpm /function/  
+> COPY instantclient_21_5 /function/  
+> RUN rpm -ivh /function/libaio-0.3.112-1.el8.x86_64.rpm  
 RUN pip3 install --target /python/  --no-cache --no-cache-dir -r requirements.txt && rm -fr ~/.cache/pip /tmp* requirements.txt func.yaml Dockerfile .venv && chmod -R o+r /python
 ADD . /function/
 RUN rm -fr /function/.pip_cache
