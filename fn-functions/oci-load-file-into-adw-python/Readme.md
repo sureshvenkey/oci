@@ -13,8 +13,8 @@ https://github.com/oracle/oracle-functions-samples/tree/master/samples
 1. I use fnproject/python:3.8 and fnproject/python:3.8-dev docker images of RHEL8 flavour to run functions in container.    
 3. Download the latest Oracle instant client libraries and make sure they are copied in the container. I used instantclient_21_5 (instantclient-basic-linux.x64-21.5.0.0.0dbru) which can be downloded from https://www.oracle.com/database/technologies/instant-client/downloads.html for more details refer Dockerfile.  
 4. During build or deploy phase of the function, Oracle Functions uses the “func.yaml” file to create a temporary Dockerfile to build the Docker image. Once the docker image is created Oracle Functions deletes this file.  
-If you need to add additional packages to be included in the conatiner, then create a Dockerfile simillar to the Dockerfile created by fn function using “func.yaml”, then to add the dependencies use COPY or ADD command. 
-Use the fn build command with verbose to know the Dockerfile used.
+If you need to add additional packages to be included in the conatiner, then create a Dockerfile simillar to the Dockerfile created by fn function using “func.yaml”, then to add the dependencies using COPY or ADD command.   
+Use the fn build command with verbose to know the Dockerfile used by fn function.
 > fn -v build
 
 For more detail about adding dependency packages at runtime, refer:
