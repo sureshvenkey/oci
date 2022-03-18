@@ -36,7 +36,7 @@ If you are new to fn function, then start with fn init command which creates a f
 > ```
 
 For More details refer fn project python intro tutorial.   
-https://fnproject.io/tutorials/python/intro/
+https://fnproject.io/tutorials/python/intro/  
 Commonly used code in Oracle Functions are given below.  
 https://github.com/oracle/oracle-functions-samples/tree/master/samples
 
