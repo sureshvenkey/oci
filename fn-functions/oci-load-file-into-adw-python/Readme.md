@@ -43,12 +43,12 @@ For more detail about adding dependency packages at runtime, refer:
 
 4. In case if you need libaio.sp.1 library which does'nt come with instant client, Use rpm command to install libaio-0.3.112-1.el8.x86_64.rpm package to resolve the dependency.  
 5. Autonmous Database uses mtls (mutual tls) authentication that means you need to have the Wallet zip in addition to the database password to connect to the database.
-The zip file will be in Wallet_databasename.zip format and includes the following files:
-tnsnames.ora and sqlnet.ora: Network configuration files storing connect descriptors and SQL*Net client side configuration.  
-cwallet.sso and ewallet.p12: Auto-open SSO wallet and PKCS12 file. The PKCS12 file is protected by the wallet password provided while downloading the wallet.  
-keystore.jks and truststore.jks: Java keystore and truststore files. They are protected by the wallet password provided while downloading the wallet.  
-ojdbc.properties: Contains the wallet related connection property required for JDBC connection. This should be in the same path as tnsnames.ora.  
-README: Contains wallet expiration information and links for Autonomous Database tools and resources.  
+The zip file will be in Wallet_databasename.zip format and includes the following files:  
+ 1. tnsnames.ora and sqlnet.ora: Network configuration files storing connect descriptors and SQL*Net client side configuration.  
+ 2. cwallet.sso and ewallet.p12: Auto-open SSO wallet and PKCS12 file. The PKCS12 file is protected by the wallet password provided while downloading the wallet.  
+ 3. keystore.jks and truststore.jks: Java keystore and truststore files. They are protected by the wallet password provided while downloading the wallet.  
+ 4. ojdbc.properties: Contains the wallet related connection property required for JDBC connection. This should be in the same path as tnsnames.ora.  
+ 5. README: Contains wallet expiration information and links for Autonomous Database tools and resources.  
  
 7. Workaround for "libclntsh.so: file too short" error
 > "SystemExit: DPI-1047: Cannot locate a 64-bit Oracle Client library: \"/function/instantclient_21_5/libclntsh.so: file too short\". See https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html for help"    
