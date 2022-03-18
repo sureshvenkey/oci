@@ -33,8 +33,8 @@ Sample Dockerfile is given below
 > COPY --from=build-stage /python /python   
 > COPY --from=build-stage /function /function  
 > RUN chmod -R o+r /function  
-> **ENV PYTHONPATH=/function:/python&**    
-> ENV LD_LIBRARY_PATH /function/instantclient_21_5  
+> ENV PYTHONPATH=/function:/python&      
+> **ENV LD_LIBRARY_PATH /function/instantclient_21_5**    
 > ENTRYPOINT ["/python/bin/fdk", "/function/func_ora.py", "handler"]  
 
 For more detail about adding dependency packages at runtime, refer:
