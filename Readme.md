@@ -35,6 +35,7 @@ If you are new to fn function, then start with fn init command which creates a f
 > memory: 256  
 > ```
 
+For More details refer.
 https://fnproject.io/tutorials/python/intro/
 
 
