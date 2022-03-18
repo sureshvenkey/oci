@@ -24,7 +24,7 @@ If you are new to fn function, then start with fn init command which creates a f
 >        ctx, response_data=json.dumps(  
 >            {"message": "Hello {0}".format(name)}),  
 >        headers={"Content-Type": "application/json"}  
->    )```  
+>    )  ```  
 
 https://fnproject.io/tutorials/python/intro/
 
