@@ -4,7 +4,7 @@ It’s easy to use, supports every programming language, and is extensible and p
 > https://fnproject.io/  
 > https://docs.oracle.com/en-us/iaas/Content/Functions/Concepts/functionsoverview.html  
 
-If you are new to fn function, then start with fn init command which creates a function boilerplate (Starting point).
+If you are new to fn function, then start with fn init command which creates a function boilerplate (Starting point). Sample python code is generated wiht a handler function with ctx and data variables. ctx is the function input variables and the data is the event input variable in json format.
 > $ fn init --runtime python pythonfn  
 > $ cd pythonfn  
 > $ ls  
