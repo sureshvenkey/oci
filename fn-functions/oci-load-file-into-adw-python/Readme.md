@@ -6,9 +6,9 @@ https://docs.oracle.com/en/learn/functions_adw/index.html#introduction
 Commonly used code in Oracle Functions  
 https://github.com/oracle/oracle-functions-samples/tree/master/samples  
 
-#### Function Flow   
-
-> #### ```End User or IOT Device ---> OCI Bucket ---> OCI Event ---> OCI FN-Function ---> Autonomous Database```  
+> ```#### Function Flow   
+> 
+> #### End User or IOT Device ---> OCI Bucket ---> OCI Event ---> OCI FN-Function ---> Autonomous Database```  
  
 
 1. I use fnproject/python:3.8 and fnproject/python:3.8-dev docker images of RHEL8 flavour to run functions in container.    
