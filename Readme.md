@@ -26,6 +26,14 @@ If you are new to fn function, then start with fn init command which creates a f
 >        headers={"Content-Type": "application/json"}  
 >    )  
 >    ```  
+> $ cat func.yaml
+> ```schema_version: 20180708  
+> name: pythonfn  
+> version: 0.0.1  
+> runtime: python  
+> entrypoint: /python/bin/fdk /function/func.py handler  
+> memory: 256  
+> ```
 
 https://fnproject.io/tutorials/python/intro/
 
