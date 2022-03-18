@@ -51,7 +51,8 @@ The zip file will be in Wallet_databasename.zip format and includes the followin
 - ojdbc.properties: Contains the wallet related connection property required for JDBC connection. This should be in the same path as tnsnames.ora.  
 - README: Contains wallet expiration information and links for Autonomous Database tools and resources.  
 
-This zip file contents need to be extracted under LD_LIBRARY_PATH/network/admin directory.  
+The zip file contents need to be extracted under LD_LIBRARY_PATH/network/admin directory. We have set the LD_LIBRARY_PATH environment variable in Dockerfile as  
+> "ENV LD_LIBRARY_PATH /function/instantclient_21_5"  
 
 6. Workaround for "libclntsh.so: file too short" error
 > "SystemExit: DPI-1047: Cannot locate a 64-bit Oracle Client library: \"/function/instantclient_21_5/libclntsh.so: file too short\". See https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html for help"    
