@@ -54,6 +54,11 @@ The zip file will be in Wallet_databasename.zip format and includes the followin
 The zip file contents need to be extracted under LD_LIBRARY_PATH/network/admin directory, i.e. copy it under our working directory having the oracle instaclient. We have set the LD_LIBRARY_PATH environment variable in Dockerfile as  
 > "ENV LD_LIBRARY_PATH /function/instantclient_21_5"  
 
+Refer below link for more details  
+https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/cswgs/autonomous-connect-download-credentials.html#GUID-B06202D2-0597-41AA-9481-3B174F75D4B1  
+https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/connect-download-wallet.html#GUID-BE884A1B-034D-4CD6-9B71-83A4CCFDE9FB  
+https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/connecting-nodejs.html#GUID-AB1E323A-65B9-47C4-840B-EC3453F3AD53  
+
 6. Workaround for "libclntsh.so: file too short" error
 > "SystemExit: DPI-1047: Cannot locate a 64-bit Oracle Client library: \"/function/instantclient_21_5/libclntsh.so: file too short\". See https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html for help"    
 
