@@ -1,7 +1,7 @@
 
-## Use OCI fn function to load data from object storage to Autonomus Database with cx_Oracle python module
+## Use OCI fn function to load data from object storage to Autonomous Database with cx_Oracle python module
 Useful link for ETL using Oracle Functions  
-The below link uses soda to connect to Autonmous Databse, but insted i use cx_Oracle python module to connect to Autonmous Database  
+The below link uses soda to connect to Autonomous Databse, but insted i use cx_Oracle python module to connect to Autonmous Database  
 https://docs.oracle.com/en/learn/functions_adw/index.html#introduction  
 Commonly used code in Oracle Functions  
 https://github.com/oracle/oracle-functions-samples/tree/master/samples  
@@ -45,7 +45,7 @@ For more detail about adding dependency packages at runtime, refer:
 > https://docs.oracle.com/en-us/iaas/Content/Functions/Tasks/functionsusingcustomdockerfiles.htm
 
 4. In case if you need libaio.sp.1 library which does'nt come with instant client, Use rpm command to install libaio-0.3.112-1.el8.x86_64.rpm package to resolve the dependency.  
-5. Autonmous Database uses mtls (mutual tls) authentication that means you need to have the Wallet zip in addition to the database password to connect to the database.
+5. Autonomous Database uses mtls (mutual tls) authentication that means you need to have the Wallet zip in addition to the database password to connect to the database.
 
 The zip file will be in Wallet_databasename.zip format and includes the following files:  
 - tnsnames.ora and sqlnet.ora: Network configuration files storing connect descriptors and SQL*Net client side configuration.  
