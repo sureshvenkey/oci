@@ -14,6 +14,7 @@ Note what ever be the way if you take volume clone or volume backup and restore 
 completes.  
 3. You can’t create more than one custom image of a single instance at a time. When you start to create a custom image, the system implements a 20-minute timeout during which you can’t create another image of the same instance. You can, however, create images of different instances at the same time.  
 4. You can import or export a custom image with a maximum size of 400 GB.  
+5. A cloned volume is a point-in-time direct disk-to-disk deep copy of the source volume. All data on the source volume is copied to the clone volume. Cloning enables you to make a copy of an existing boot or block volume without going through the backup and restore process.
 
 https://blogs.oracle.com/developers/post/working-with-oracle-cloud-infrastructure-custom-compute-images
 https://database-heartbeat.com/2020/12/31/three-ways-to-clone-your-compute-instance-in-oracle-cloud-infrastructure/#:~:text=%20Three%20Ways%20to%20Clone%20your%20Compute%20Instance,duplicate%20an%20instance%20in%20the%20same...%20More%20  
