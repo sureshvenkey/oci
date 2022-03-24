@@ -16,3 +16,4 @@ completes.
 4. You can import or export a custom image with a maximum size of 400 GB.  
 
 https://blogs.oracle.com/developers/post/working-with-oracle-cloud-infrastructure-custom-compute-images
+https://database-heartbeat.com/2020/12/31/three-ways-to-clone-your-compute-instance-in-oracle-cloud-infrastructure/#:~:text=%20Three%20Ways%20to%20Clone%20your%20Compute%20Instance,duplicate%20an%20instance%20in%20the%20same...%20More%20  
