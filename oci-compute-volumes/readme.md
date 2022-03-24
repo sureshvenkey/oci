@@ -5,7 +5,7 @@ You can use custome image in any one of these 2 scenarios
 * If you are planing to migrate a onprem vm to oci, note the onprem vm image shoud be of vmdk format for import.
 * You can create a custom Image with all dependencies installed and make the as a golden image or template for provissing new instances, Note the hostnames need to be mannually changed after provission or use custom init to change the hostname or user terraform remote exec provisioner of ansible code.  
 
-Note what ever be the way if you take volume clone or volume backup and restore or custome image for creating new instance, the custom hostname (advance options to to set custom hostname in network tab) will not be assigned to the newly created instances.
+Note what ever be the way if you take volume clone or volume backup and restore or custome image for creating new instance, the custom hostname (manuall way: advance options to to set custom hostname in network tab) will not be assigned to the newly created instances.
 
 1. Before you create a custom image of an instance, you must disconnect all iSCSI attachments and remove all iscsid node configurations from the instance.  
 2. When you create an image of a running instance, the instance shuts down and remains unavailable for several minutes. The instance restarts when the process 
