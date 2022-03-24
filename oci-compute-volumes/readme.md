@@ -7,6 +7,8 @@ You can use custome image in any one of these 2 scenarios
 
 Note what ever be the way if you take volume clone or volume backup and restore or custome image for creating new instance, the custom hostname (manuall way: advance options to to set custom hostname in network tab) will not be assigned to the newly created instances.
 
+[GitHub Logo](/images/github-logo.png)
+
 1. Before you create a custom image of an instance, you must disconnect all iSCSI attachments and remove all iscsid node configurations from the instance.  
 2. When you create an image of a running instance, the instance shuts down and remains unavailable for several minutes. The instance restarts when the process 
 completes.  
