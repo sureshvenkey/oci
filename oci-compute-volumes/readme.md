@@ -2,7 +2,7 @@
 
 ## Custom Image
 You can use custome image in any one of these 2 scenarios
-* If you are pllaning to migrate a onprem vm to oci, note the onprem vm image shoud be of vmdk format  
+* If you are planing to migrate a onprem vm to oci, note the onprem vm image shoud be of vmdk format  
 
 1. Before you create a custom image of an instance, you must disconnect all iSCSI attachments and remove all iscsid node configurations from the instance.  
 2. When you create an image of a running instance, the instance shuts down and remains unavailable for several minutes. The instance restarts when the process 
