@@ -1,6 +1,5 @@
 # Usecase for oci volume clone, volume backup, custom image
 
-## Custom Image
 You can use custome image in any one of these 2 scenarios
 * If you are planing to migrate a onprem vm to oci, note the onprem vm image shoud be of vmdk format for import.
 * You can create a custom Image with all dependencies installed and make the as a golden image or template for provissing new instances, Note the hostnames need to be mannually changed after provission or use custom init to change the hostname or user terraform remote exec provisioner of ansible code. 
