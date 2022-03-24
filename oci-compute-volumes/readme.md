@@ -2,7 +2,7 @@
 
 * Use custom image if you are planing to migrate a onprem vm to oci, note the onprem vm image shoud be of vmdk format for import.
 * You can create a custom Image with all dependencies installed and make the as a golden image or template for provissing new instances, Note the hostnames need to be mannually changed after provission or use custom init to change the hostname or user terraform remote exec provisioner of ansible code. 
-* Backup & Restore are sutable for standard schedulled backup process which can be taken eith incremental for full backups. Note the restore creates the volume from the backup stored in object storage which migh take some time for restor deponding up on the size.
+* Backup & Restore are sutable for standard schedulled backup process which can be taken either incremental for full backups. Note the restore creates the volume from the backup stored in object storage which migh take some time for restor deponding up on the size.
 * volume clone are always full backup, can be used in emergency condition.   
 
 Note what ever be the way if you take volume clone or volume backup and restore or custome image for creating new instance, the custom hostname (manuall way: advance options to to set custom hostname in network tab) will not be assigned to the newly created instances.
