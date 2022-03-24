@@ -4,3 +4,4 @@
 2. When you create an image of a running instance, the instance shuts down and remains unavailable for several minutes. The instance restarts when the process 
 completes.  
 3. You can’t create more than one custom image of a single instance at a time. When you start to create a custom image, the system implements a 20-minute timeout during which you can’t create another image of the same instance. You can, however, create images of different instances at the same time.  
+4. You can import or export a custom image with a maximum size of 400 GB.  
