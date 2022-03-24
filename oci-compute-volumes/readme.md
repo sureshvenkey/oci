@@ -5,7 +5,7 @@
 * Backup & Restore are sutable for standard schedulled backup process which can be taken either incremental for full backups. Note the restore creates the volume from the backup stored in object storage which migh take some time for restor deponding up on the size.
 * volume clone are always full backup, can be used in emergency condition.   
 
-Note what ever be the way if you take volume clone or volume backup and restore or custome image for creating new instance, the custom hostname (manuall way: advance options to to set custom hostname in network tab) will not be assigned to the newly created instances.
+Note what ever be the way if you take volume clone or volume backup and restore or custome image for creating new windows instance, the custom hostname (manuall way: advance options to to set custom hostname in network tab) will not be assigned to the newly created instances. But it works for linux.
 
 [hostname_under_networking](/images/hostname.JPG)
 
