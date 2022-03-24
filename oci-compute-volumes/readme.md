@@ -1,4 +1,4 @@
-# Scenarios usecase for oci volume clone, volume backup, custom image
+# Usecase for oci volume clone, volume backup, custom image
 
 ## Custom Image
 You can use custome image in any one of these 2 scenarios
